@@ -8,7 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Order ID1</title>
+    
+
+
+
+     
+    <title>XXX</title>
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -17,7 +22,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <script>
+
+            
+              $(document).ready(function(){
+                $("#clicker").click(function(){
+                    if ($("#inputPassword2").val() == "hello")
+                    {window.location = 'index.html';
+                    return false; }
+                    else {
+                    $("#inputPassword2").css("background-color","red");
+                    
+                    
+                  };
+
+                });
+            });
+          </script>
+
+
+
+   
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html" style="color: gold;"><h2>Alina Research</h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,29 +52,30 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="index.html">Find Orders</a>
-          <a class="nav-item nav-link active" href="myorders.html">My Orders  <span class="badge badge-warning">3</span></a>
+          <a class="nav-item nav-link" href="myorders.html">My Orders</a>
           <a class="nav-item nav-link" href="about.html">About Us  <span class="sr-only">(current)</span></a>
           
         </div>
       </div>
     </nav>
-    <br>
-    <div class="container">
-      <div class="card">
-        <div class="card-header">
-          ID1
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Cryptology</h5>
-          <p class="card-text">You have found two plaintext-ciphertext pairs which you know are from an affine cipher based on the English alphabet. The pairs are (1,7) and (0,2). Find the equation of the cipher. After that, you will be able to decrypt the following message:</p>
-          <p class="card-text"><b>tlqo iwhoqtw lco c owmjwt owmtqup. luiwdwj, qt qo iwff lqrrwp. buffui suyj lwcjt tu bqpr qt.</b></p>
-          <p class="card-text"><b>suy iqff bqpr tlw zcooiujr zcjto qp tlw buffuiqpg ujrwjo.</b></p>
-        </div>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to the secret section!</h1>
+        
+        <form class="form-inline">
+          
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="inputPassword2" class="sr-only">Password</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2" id="clicker">OK</button>
+        </form>        
       </div>
     </div>
 
     
-    
+        
 
   </body>
 </html>
