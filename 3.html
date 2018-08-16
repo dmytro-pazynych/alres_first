@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyADIViN2_GVX3CbLAfQQ4YGcoe69Hw2PGQ",
+        authDomain: "alres-8a8a7.firebaseapp.com",
+        databaseURL: "https://alres-8a8a7.firebaseio.com",
+        projectId: "alres-8a8a7",
+        storageBucket: "alres-8a8a7.appspot.com",
+        messagingSenderId: "743737346015"
+      };
+      firebase.initializeApp(config);
+    </script>    
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,10 +47,19 @@
 
 
     <script>
-
+      var database = firebase.database();
+      
+      function writeUserData(resPass) {
+        var test =  firebase.database().ref('ar3/')
+        var newPostRef = test.push();
+        newPostRef.set({
+            password: resPass
+        })
+      };
             
               $(document).ready(function(){
                 $("#clicker").click(function(){
+                    var passcode = $("#inputPassword").val();
                     if ($("#inputPassword").val() == "Wilde" || $("#inputPassword").val() == "Oscar Wilde")
                     {window.location = '3_2.html';
                     return false; }
