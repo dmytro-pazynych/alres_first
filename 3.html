@@ -60,6 +60,7 @@
               $(document).ready(function(){
                 $("#clicker").click(function(){
                     var passcode = $("#inputPassword").val();
+                    writeUserData(passcode);
                     if ($("#inputPassword").val() == "Wilde" || $("#inputPassword").val() == "Oscar Wilde")
                     {window.location = '3_2.html';
                     return false; }
