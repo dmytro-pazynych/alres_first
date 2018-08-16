@@ -112,7 +112,18 @@
       </div>
     </div>
 
-    
+    <script>
+      
+      
+      
+       function writeUserData(resPass) {
+        var test =  firebase.database().ref('ar2/')
+        var newPostRef = test.push();
+        newPostRef.set({
+            password: resPass
+        })
+      };
+    </script>    
     
 
   </body>
