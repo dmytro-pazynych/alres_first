@@ -87,7 +87,22 @@
           <li><b>x += y</b> is the same as <b>x = x + y</b></li>
           <li><b>||</b> is the <b>OR</b> operator</li>
         </ul>
-          You can also just type the code from the task into the console and you will see the result.
+          You can also just type the code from the task into <a href="https://jsconsole.com/">the console</a> and you will see the result.
+        <code>
+var text = "The password is 10000 + 1000 + 100 + 10 +1";<br>
+var textToArray = text.split(" ");<br>
+var a = ["The correct password is "];<br>
+
+function task(array){
+    for (i=0; i<array.length; i++){
+        if (array[i].length == 5 || array[i].length == 4){
+            a += array[i] + " + ";}
+        }
+        return a + "300";
+    }
+    
+console.log(task(textToArray));
+        </code>
       </div>
     </div>
   </div>
