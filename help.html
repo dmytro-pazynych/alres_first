@@ -65,7 +65,7 @@
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Order #2
+          Order #2 <span class="badge badge-warning">updated</span>
         </button>
       </h5>
     </div>
@@ -87,21 +87,21 @@
           <li><b>x += y</b> is the same as <b>x = x + y</b></li>
           <li><b>||</b> is the <b>OR</b> operator</li>
         </ul>
-          You can also just type the code from the task into <a href="https://jsconsole.com/">the console</a> and you will see the result.
+          You can also just type the code from the task into <a href="https://jsconsole.com/">the console</a> and you will see the result.<br>
         <code>
 var text = "The password is 10000 + 1000 + 100 + 10 +1";<br>
 var textToArray = text.split(" ");<br>
 var a = ["The correct password is "];<br>
 
-function task(array){
-    for (i=0; i<array.length; i++){
-        if (array[i].length == 5 || array[i].length == 4){
-            a += array[i] + " + ";}
-        }
-        return a + "300";
-    }
+function task(array){<br>
+    for (i=0; i<array.length; i++){<br>
+        if (array[i].length == 5 || array[i].length == 4){<br>
+            a += array[i] + " + ";}<br>
+        }<br>
+        return a + "300";<br>
+    }<br>
     
-console.log(task(textToArray));
+console.log(task(textToArray));<br>
         </code>
       </div>
     </div>
