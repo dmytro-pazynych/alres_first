@@ -60,7 +60,7 @@
             
               $(document).ready(function(){
                 $("#clicker").click(function(){
-                    var passcode = $("#inputPassword").val();
+                    var passcode = $("#inputPassword2").val();
                     writeUserData(passcode);
                     if ($("#inputPassword2").val() == "pi" || $("#inputPassword2").val() == "Pi" || $("#inputPassword2").val() == "PI")
                     {window.location = 'bonuses.html';
@@ -112,7 +112,18 @@
       </div>
     </div>
 
-    
+     <script>
+      
+      
+      
+       function writeUserData(resPass) {
+        var test =  firebase.database().ref('arfinal/')
+        var newPostRef = test.push();
+        newPostRef.set({
+            password: resPass
+        })
+      };
+    </script>   
         
 
   </body>
