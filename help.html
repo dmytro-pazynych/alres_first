@@ -88,13 +88,13 @@
           <li><b>||</b> is the <b>OR</b> operator</li>
         </ul>
           You can also just type the code from the task into <a href="https://jsconsole.com/">the console</a> and you will see the result.<br>
-        <code>
+        <pre><code>
 var text = "The password is 10000 + 1000 + 100 + 10 +1";<br>
 var textToArray = text.split(" ");<br>
 var a = ["The correct password is "];<br>
 
 function task(array){<br>
-    for (i=0; i<array.length; i++){<br>
+    for (i=0; i < array.length; i++){<br>
         if (array[i].length == 5 || array[i].length == 4){<br>
             a += array[i] + " + ";}<br>
         }<br>
@@ -102,7 +102,7 @@ function task(array){<br>
     }<br>
     
 console.log(task(textToArray));<br>
-        </code>
+        </code></pre>
       </div>
     </div>
   </div>
