@@ -47,7 +47,7 @@
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Order #1
+          Order #1 <span class="badge badge-warning">updated</span>
         </button>
       </h5>
     </div>
@@ -56,6 +56,10 @@
       <div class="card-body">
         The equation of the affine cipher is <b>E(x) = (ax+b) mod 26</b>, where mod is modulo operation. The modulo operation finds the remainder after division of one number by another. For example, the expression "5 mod 2" would evaluate to 1 because 5 divided by 2 leaves a quotient of 2 and a remainder of 1, while "9 mod 3" would evaluate to 0 because the division of 9 by 3 has a quotient of 3 and leaves a remainder of 0.<br>
         <b>a</b> and <b>b</b> are the key for the cipher, which you can find using the pairs <b>(1,7)</b> and <b>(0,2)</b>. <b>1</b> and <b>0</b> are <b>x</b> and <b>7</b> and <b>2</b> are <b>E(x)</b> in the equation. Compile the system from two equations and find <b>a</b> and <b>b</b>.<br>
+        <code>
+          7 = (a + b) mod 26<br>
+          2 = b mod 26
+        </code>
         Once you find <b>a</b> and <b>b</b> you can decipher the text using <a href="https://cryptii.com/affine-cipher">this service</a>.
         
       </div>
