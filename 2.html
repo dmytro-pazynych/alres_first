@@ -46,13 +46,21 @@
 
 
     <script>
-
+      var database = firebase.database();
+      
+      function writeUserData(resPass) {
+        var test =  firebase.database().ref('ar2/')
+        var newPostRef = test.push();
+        newPostRef.set({
+            password: resPass
+        })
+      };
             
               $(document).ready(function(){
                 $("#clicker").click(function(){
                     var passcode = $("#inputPassword").val();
                     writeUserData(passcode);
-                    if ($("#inputPassword").val() == 11300)
+                    if (passcode == 11300)
                     {window.location = '2_2.html';
                     return false; }
                     else {
