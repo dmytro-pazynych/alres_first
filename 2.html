@@ -63,10 +63,13 @@
                     if (passcode == 11300)
                     {window.location = '2_2.html';
                     return false; }
+                    else if (passcode == "10000 + 1000 + 300") {
+                      alert("You are on the right track! But this is not really a password ... Try math");  
+                    } else if (passcode == "The correct password is 10000 + 1000 + 300"){
+                      alert("That is just the result, but not the password. Use some math)");}
                     else {
-                    $("#inputPassword").css("background-color","red");
-                    
-                    
+                      $("#inputPassword").css("background-color","red");
+                                       
                   };
 
                 });
@@ -108,6 +111,8 @@
             </div>
             <button type="submit" class="btn btn-primary mb-2" id="clicker">OK</button>
           </form>
+          <br>
+          <p class="card-text"><b>Note:</b> You should not just enter the result, but enter the password. The result contains the password, just look more closely.</p>
 
         </div>
       </div>
